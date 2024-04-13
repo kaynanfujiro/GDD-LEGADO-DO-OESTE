@@ -70,6 +70,15 @@ header{
     height: 90vh;
 }
 
+.Cabecalho{
+    font-family: "kanit", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: #db744c;
+    text-shadow: 1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
+  }
+
 .right-page_Sobre p,h1{
     font-size: 1.8rem;
     font-family: "kanit", sans-serif;
@@ -142,6 +151,70 @@ header{
   
   .item-menu:hover .circle {
     transform: scale(1.1); 
+  }
+
+  .teclasContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .teclasContent p{
+    font-size: 1.0rem;
+  }
+
+  .imagemControl{
+    width: 80px;
+    height: auto;
+  }
+
+  #LeftMouse{
+    font-size: 20px;
+    color: #db744c;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  #LeftMouse::before {
+    content: "Botão Esquerdo: "; /* Adiciona o texto "Nome: " antes do conteúdo do parágrafo */
+    color: #000000; /* Cor do texto "Nome: " */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  #RightMouse{
+    font-size: 20px;
+    color: #db744c;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  #RightMouse::before {
+    content: "Botão Esquerdo: "; /* Adiciona o texto "Nome: " antes do conteúdo do parágrafo */
+    color: #000000; /* Cor do texto "Nome: " */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  #AButton{
+    font-size: 20px;
+    color: #db744c;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  #AButton::before {
+    content: "Tecla A: "; /* Adiciona o texto "Nome: " antes do conteúdo do parágrafo */
+    color: #000000; /* Cor do texto "Nome: " */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  #DButton{
+    font-size: 20px;
+    color: #db744c;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  #DButton::before {
+    content: "Tecla D: "; /* Adiciona o texto "Nome: " antes do conteúdo do parágrafo */
+    color: #000000; /* Cor do texto "Nome: " */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   @media screen and (max-width: 1420px){
