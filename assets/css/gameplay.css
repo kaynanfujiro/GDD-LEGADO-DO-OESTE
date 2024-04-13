@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header{
@@ -63,15 +63,26 @@ header{
 }
 
 .right-page_Sobre{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     width: 80vw;
     height: 90vh;
-}
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.Cabecalho{
+    font-family: "kanit", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: #db744c;
+    text-shadow: 1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
+  }
 
 .right-page_Sobre p,h1{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-family: "kanit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -79,20 +90,49 @@ header{
 }
 
 .right-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    width: 70%;
-    margin: 0,auto;
-    border: 2px solid;
-    box-shadow: 1px 2px 0px 2px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8em;
+}
+
+.fases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fases p{
+    align-items: center;
+    text-align: center;
+}
+
+.Images{
+    width: 300px;
+    height: 300px;
+}
+
+.fases{
+    margin: 5px;
+    font-family: "kanit", sans-serif;
     border-radius: 10px;
     border-color: #090807;
     padding: 10px;
     background-color: #ffffff87;
     color: #db744c;
+    text-shadow: 1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.colorText{
+    color: #000000;
 }
 
 .textoPrincipal{
-    text-align: center;
+    text-align: start;
 }
 
 .menu_ul{
@@ -106,7 +146,7 @@ header{
 
 .menu_ul a{
     font-family: "Kanit", sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     color: #db744c;
     text-decoration: none;
     text-shadow: 1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
@@ -146,15 +186,22 @@ header{
 
   @media screen and (max-width: 1420px){
     .menu_ul a{
-        font-size: 15px;
+        font-size: 20px;
     }
   }
 
   @media screen and (max-width: 1280px){
+    .menu_ul a{
+        font-size: 15px;
+    }
+  }
+
+  
+  @media screen and (max-width: 780px){
     .left-page{
         display: none;
     }
     .right-page_Sobre{
         width: 100vw;
     }
-  }
+}

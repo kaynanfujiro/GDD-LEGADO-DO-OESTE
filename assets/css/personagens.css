@@ -146,7 +146,7 @@ header{
 
 .menu_ul a{
   font-family: "Kanit", sans-serif;
-  font-size: 20px;
+  font-size: 35px;
   color: #db744c;
   text-decoration: none;
   text-shadow: 1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
@@ -190,15 +190,20 @@ header{
 
   @media screen and (max-width: 1420px){
     .menu_ul a{
-        font-size: 15px;
+        font-size: 20px;
     }
   }
 
   @media screen and (max-width: 1280px){
+    .menu_ul a{
+        font-size: 15px;
+    }
+  }
+
+  
+  @media screen and (max-width: 1280px){
     .left-page{
         display: none;
     }
-    /* .right-page_Sobre{
-        width: 100vw;
-    } */
-  }
+
+}

@@ -108,7 +108,7 @@ header{
 
 .menu_ul a{
     font-family: "Kanit", sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     color: #db744c;
     text-decoration: none;
     text-shadow: 1px 0 black, 0 -1px black, 1px 0 black, 0 -1px black;
@@ -146,24 +146,31 @@ header{
     transform: scale(1.1); 
   }
 
-  @media screen and (max-width: 1420px){
-    .menu_ul a{
-        font-size: 15px;
-    }
-  }
-
-  @media screen and (max-width: 600px){
-    .left-page{
-        display: none;
-    }
-    .right-page_Sobre{
-        width: 100vw;
-    }
-  }
-
   @media screen and (max-width: 1280px){
     .right-content{
         font-size: 1.6rem;
         line-height: 1.2em;
     }
   }
+
+  @media screen and (max-width: 1420px){
+    .menu_ul a{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1280px){
+    .menu_ul a{
+        font-size: 15px;
+    }
+  }
+
+  
+  @media screen and (max-width: 780px){
+    .left-page{
+        display: none;
+    }
+    .right-page_Sobre{
+        width: 100vw;
+    }
+}
